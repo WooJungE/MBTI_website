@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>메인 페이지</title>
+        <link rel="stylesheet" type="text/css" href=""mainpage.css/> 
+        <style type="text/css">
+            #mbti_cha{position:fixed; top:20px; right:30px; border: thin solid green;} 
+        </style>
+    </head>
+<body>
+    <header>
+        <h2>INFP INSIGHT</h2>
+    </header>
+        <a href="mainpage.html">
+            <img id="mbti_cha" src = "https://namu.wiki/w/INFP" width="130" height="100" alt="infp"> 
+        </a>
+    <div class="header">
+        <nav>
+            <a href="about.html">infp 알아보기</a>
+            <a href="book.html">책</a>
+            <a href="museum.html">박물관&미술관</a>
+            <a href="walk.html">산책로</a>
+            <a href="quiz.html">퀴즈</a>
+        </nav>
+    </div>
+
+</br></br></br>
+<canvas id="myCanvas" width="500" height="300"></canvas>
+<script type = "text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var myContext = canvas.getContext("2d");
+    myContext.moveTo(250, 10);
+    myContext.lineTo(140, 50);
+    myContext.lineTo(360, 50);
+    myContext.lineTo(250, 10);
+    myContext.stroke();
+
+    myContext.rect(130,55,235,10);
+    myContext.rect(160,70,15,100);
+    myContext.rect(190,70,15,100);
+    myContext.rect(320,70,15,100);
+    myContext.rect(290,70,15,100);
+    myContext.rect(220,130,55,10);
+    myContext.rect(235,145,25,25);
+    myContext.rect(130,175,235,10);
+    myContext.stroke();
+
+    myContext.rect(140,200,215,45);
+    myContext.fillStyle="grey";
+    myContext.fill();
+
+    var text1 = "(ART)MUSEUM";
+    myContext.font="16pt San Serif";
+    myContext.fillStyle="white"
+    myContext.fillText(text1, 180, 230);
+</script>
+<div id="museum" style="width:480px; height:850px; padding:5px; border:1px solid; margin:10px;"></div>
+<figure>
+    <a href="https://sema.seoul.go.kr/">
+#    <img id="ssa" src="https://w.namu.la/s/ddcaddd752b51e186687f3221a9bceb94f64c3ee0c7873e15836a28">
+    </a>
+</figure>
