@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>박물관과 미술관</title>
-    <style type="text/css">
-      #mbti_cha{position:fixed; top:20px; right:30px; border: thin solid green;}
-    </style>
-  </head>
-  <body>
-    <h2>INFP INSIGHT</h2>
-      <a href="mainpage.html">
-        <img id="mbti_cha" src="https://w.namu.la/s/174319bcb9d6c358882beefdde07588111894fbe5009892c854963f42c00884bbd93f25c9131ef47d36f4a94ce8266ad965219351100624f84b43822657f060f3fa30da970f1e3782f4e13983a6737b223ac490531327a4b3e91264c56d0c431" width="130" height="100" alt="infp">
-      </a>
-      <div class="header">
+    <head>
+        <meta charset="UTF-8">
+        <title>메인 페이지</title>
+        <link rel="stylesheet" type="text/css" href=""mainpage.css/> 
+        <style type="text/css">
+            #mbti_cha{position:fixed; top:20px; right:30px; border: thin solid green;} 
+        </style>
+    </head>
+<body>
+    <header>
+        <h2>INFP INSIGHT</h2>
+    </header>
+        <a href="mainpage.html">
+            <img id="mbti_cha" src = "https://namu.wiki/w/INFP" width="130" height="100" alt="infp"> 
+        </a>
+    <div class="header">
         <nav>
-          <a href="about.html">infp 알아보기</a>
-          <a href="book.html">책</a>
-          <a href="museum.html">박물관·미술관</a>
-          <a href="walk.html">산책로</a>
-          <a href="quiz.html">퀴즈</a>
+            <a href="about.html">infp 알아보기</a>
+            <a href="book.html">책</a>
+            <a href="museum.html">박물관&미술관</a>
+            <a href="walk.html">산책로</a>
+            <a href="quiz.html">퀴즈</a>
         </nav>
     </div>
+
 </br></br></br>
-    <canvas id="myCanvas" width="500" height="300"></canvas>
-    <script type="text/javascript">
-        var canvas = document.getElementById("myCanvas");
-        var myContext = canvas.getContext("2d");
-        myContext.moveTo(250,10);
-        myContext.lineTo(140,50);
-        myContext.lineTo(360,50);
-        myContext.lineTo(250,10);
-        myContext.stroke();
+<canvas id="myCanvas" width="500" height="300"></canvas>
+<script type = "text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var myContext = canvas.getContext("2d");
+    myContext.moveTo(250, 10);
+    myContext.lineTo(140, 50);
+    myContext.lineTo(360, 50);
+    myContext.lineTo(250, 10);
+    myContext.stroke();
 
-        myContext.rect(130,55,235,10);
-        myContext.rect(160,70,15,100);
-        myContext.rect(190,70,15,100);
-        myContext.rect(320,70,15,100);
-        myContext.rect(290,70,15,100);
-        myContext.rect(220,130,55,10);
-        myContext.rect(235,145,25,25);
-        myContext.rect(130,175,235,10);
-        myContext.stroke();
+    myContext.rect(130,55,235,10);
+    myContext.rect(160,70,15,100);
+    myContext.rect(190,70,15,100);
+    myContext.rect(320,70,15,100);
+    myContext.rect(290,70,15,100);
+    myContext.rect(220,130,55,10);
+    myContext.rect(235,145,25,25);
+    myContext.rect(130,175,235,10);
+    myContext.stroke();
 
-        myContext.rect(140,200,215,45);
-        myContext.fillStyle="grey";
-        myContext.fill();
+    myContext.rect(140,200,215,45);
+    myContext.fillStyle="grey";
+    myContext.fill();
 
-        var text1 = "(ART)MUSEUM";
-        myContext.font="16pt San Serif";
-        myContext.fillStyle="white"
-        myContext.fillText(text1, 180, 230);
-    </script>
-    <div id="museum" style="width:480px; height:850px; padding:5px; border:1px solid; margin:10px;">
-    <figure>
-        <a href="https://sema.seoul.go.kr/">
-        <img id="ssa" src="https://w.namu.la/s/ddcaddd752b51e186687f3221a9bceb94f64c3ee0c7873e15836a28383bc079de1662a928aca7e6e7cd0b75b1c2b787381d3ca69dd1270f89a88729f2b9b9ef694089708e189cde3a3a567fc745399262d58d713bea32a9ad49110fd3f02107c" style="width:200px; height:200px;">
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.mmca.go.kr/">
-        <img id="gha" src="https://w.namu.la/s/b9c5fd79662a61765f50491be279defdd1c514d00a27b73f08473f44e72944fb9d7e95856bb66133ebe84ebe96304b99b716571ee09bd16b2197cd584adc8686b5f48021fa210cf3a3eabac58b54488c9933e6d3dc1b29fc6b7c80f343ec947e" style="width:200px; height:200px;">
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.museum.go.kr/site/main/home">
-        <img id="gjm" src="https://w.namu.la/s/df2a16f824dff0f00e2caa6d14b0b30ef328ec41badf63ba9a1c346b25320441a21644fac76860492e2cdb55ac6b97afb2bc1c527bc2c21ba88bddd900cf0c86e47d53962dcf311bc5c616644bc2ed6c3e5b51642f70bd0373f7cb4c7b85d837" style="width:200px; height:200px;">
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.gogung.go.kr/main.do">
-        <img id="gkm" src="https://w.namu.la/s/b6b3835f6dcdb0a4782a4f7ebdcbca218b4694975ff581ae0c1501d9051ceb651f1fa0fd92b3c0cf103f26d8c7295341b282f22ad4e7333405847a97637c9f48f6a6df0585775391a0080dc1a4d6b37f4e76f9de0fbe1e0edf0bb19c3cb7daee" style="width:200px; height:200px;">
-        </a>
-    </figure>
-    </div>
-  </body>
-</html>
+    var text1 = "(ART)MUSEUM";
+    myContext.font="16pt San Serif";
+    myContext.fillStyle="white"
+    myContext.fillText(text1, 180, 230);
+</script>
+<div id="museum" style="width:480px; height:850px; padding:5px; border:1px solid; margin:10px;"></div>
+<figure>
+    <a href="https://sema.seoul.go.kr/">
+#    <img id="ssa" src="https://w.namu.la/s/ddcaddd752b51e186687f3221a9bceb94f64c3ee0c7873e15836a28">
+    </a>
+</figure>
