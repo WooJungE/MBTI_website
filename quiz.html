@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>메인 페이지</title>
-        <link rel="stylesheet" type="text/css" href=""mainpage.css/> 
-        <style type="text/css">
-            #mbti_cha{position:fixed; top:20px; right:30px; border: thin solid green;} 
-        </style>
-    </head>
-<body>
-    <header>
-        <h2>INFP INSIGHT</h2>
-    </header>
-        <a href="mainpage.html">
-            <img id="mbti_cha" src = "https://namu.wiki/w/INFP" width="130" height="100" alt="infp"> 
-        </a>
-    <div class="header">
+  <head>
+    <meta charset="UTF-8">
+    <title>infp 연예인</title>
+    <style type="text/css">
+      #mbti_cha{position:fixed; top:20px; right:30px; border: thin solid green;}
+    </style>
+  </head>
+  <body>
+    <h2>INFP INSIGHT</h2>
+      <a href="mainpage.html">
+        <img id="mbti_cha" src="https://w.namu.la/s/174319bcb9d6c358882beefdde07588111894fbe5009892c854963f42c00884bbd93f25c9131ef47d36f4a94ce8266ad965219351100624f84b43822657f060f3fa30da970f1e3782f4e13983a6737b223ac490531327a4b3e91264c56d0c431" width="130" height="100" alt="infp">
+      </a>
+      <div class="header">
         <nav>
-            <a href="about.html">infp 알아보기</a>
-            <a href="book.html">책</a>
-            <a href="museum.html">박물관&미술관</a>
-            <a href="walk.html">산책로</a>
-            <a href="quiz.html">퀴즈</a>
+          <a href="about.html">infp 알아보기</a>
+          <a href="book.html">책</a>
+          <a href="museum.html">박물관·미술관</a>
+          <a href="walk.html">산책로</a>
+          <a href="quiz.html">퀴즈</a>
         </nav>
     </div>
-    </br></br></br>
+</br></br></br>
     <div id="whois" style="width:803px; height:200px; padding:5px; border:1px solid; margin:10px;">
-#        <img id="" src="">
-#        <img id="" src="">
-#        <img id="" src="">
-#        <img id="" src="">
-#        <img id="" src="">
+        <img id="js" src="https://w.namu.la/s/4fe09ef288301f528fe4a32509450f6d036ba5b034b42d34164245b02ee68f5c3d25e6813a72a5a52b0aa55e3aec3e198aced9c1894a70f00c9bb6237a977e7bcd77c3b1f81abebc6464eeb4da668c1662dc4896cebe50092fbcb4b4ef945475dc21bb7b8b5a67960ed5d19cb7f04673" style="width:160px; height:200px;" draggable="false">
+        <img id="jk" src="https://w.namu.la/s/776fe5cc079b0db174588c01a3b4adf3b25981329dbdc416585a7e4c521d6338cdcf555b31635e1a1b2ecf0f2bf87aa05e20a04954314cc356f295837412f6f89dd2f19e7700f05d32b0b187a1ffa5bb26abef0360ea29278e69cc93408bea0a0c9da98bb4cae3ead043ebca7ed57935" style="width:140px; height:200px;" draggable="false">
+        <img id="un" src="https://w.namu.la/s/1970f01c95448d096eed9c05510e3ba1d725f8f6384a5de85b7ac8e7ab4b8a5fd82ffcfbd8eabd290e0c2376db3690973a9585d03b536f5c0438898b68d77920494cba6e0a94f51728135683f3a60fe4b957b8548f02ed2f12440e596c4b9b778545a163e99f87d75f47367f5be7fa42" style="width:200px; height:200px;" draggable="false">
+        <img id="mb" src="https://w.namu.la/s/0a679ab7f1f7f4383d268e2a12e6c74665c0a97d6aeedfbf9de93958d064a86c8b194576b3dac55e8cfcc0e4f027f90fe2e70a7476fa90c3c0e087289a9923eb504cf3bd20a5ce6109008ecc27b672a21bef5293cda5c9df06bf8019f7fdaa654127969d73bdeea3b93e583aa1f63b19" style="width:140px; height:200px;" draggable="true">
+        <img id="bg" src="https://w.namu.la/s/31211b9044255609d8642b770bd0106c05342776cca81cacf5c4d6266621b902f4cff184d41f75ee7a4d8c97f1bd24314b4a4a03acfa3c8702481ac0c87cc45284863d5573b62d2de0dd4f376a1299e9ed3d71404c0e290a72e38c04100745d2a82ea46840795dec57e629858b170879" style="width:140px; height:200px;" draggable="false">
     </div>
-<div id="yesinfp" style="width:803px; height:200px; padding:5px; border:1px solid; margin:10px;"></div>
+    <div id="yesinfp" style="width:803px; height:200px; padding:5px; border:1px solid; margin:10px;">infp는 누구일까요?</div>
+
+    <script type="text/javascript">
+        var src = document.getElementById("whois"),
+        isDragging,srcId,
+        target = document.getElementById("yesinfp");
+
+        src.ondragstart = function(e){
+            srcId = e.target.id;
+            e.dataTransfer.setData("text", srcId);
+        }
+        target.ondragenter = function(e){dropId = e.target.id;}
+        target.ondragover = function(e){e.preventDefault();}
+        target.ondrop = function(e){
+            var data = e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+        }
+
+      document.getElementById("b1").onmouseclick = mouseclick_answerShow;
+    </script>
+    </body>
+</html>
